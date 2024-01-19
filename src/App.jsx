@@ -24,7 +24,27 @@ const imageData = ()=>{
 }
 
 function App() {
-  // code here
+     const photos = imageData() 
+     let imageArray=[] 
+      
+     photos.forEach(e => {
+      imageArray.push (
+        <img src = {e.img} alt={`num${e.id}`}></img>
+
+      )
+     }) 
+       return (
+         <div>
+        <div>
+          <h1 id='headline'>Kalvium  functional Gallery </h1>
+        </div>
+         <div className ='imageDiv'>
+           {imageArray}
+         </div>
+    
+
+       </div>
+     )
 }
 
 export default App;

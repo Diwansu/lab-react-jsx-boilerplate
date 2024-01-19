@@ -1,1 +1,13 @@
 /* add your styles here */
+#headline{
+    text-align: center;
+    font-size: 70px;
+}
+.imageDiv {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imageDiv img{
+    height: 500px;
+    padding: 10px;
+}
